@@ -1,7 +1,7 @@
-package domain.port.in;
+package com.aku.domain.port.in;
 
 
-import domain.model.PaymentStatus;
+import com.aku.domain.model.PaymentStatus;
 
 import java.math.BigDecimal;
 

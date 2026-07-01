@@ -1,4 +1,4 @@
-package domain.port.in;
+package com.aku.domain.port.in;
 
 public class GetAccountUseCase {
 }

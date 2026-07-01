@@ -1,6 +1,6 @@
-package domain.port.out;
+package com.aku.domain.port.out;
 
-import domain.model.Payment;
+import com.aku.domain.model.Payment;
 
 public interface PaymentRepository {
     void save(Payment payment);

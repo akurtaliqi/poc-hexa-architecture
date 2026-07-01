@@ -22,7 +22,7 @@ For each request, the system must:
 5. Return `ACCEPTED` or `REFUSED`.
 
 
-## Core domain model
+## Core com.aku.domain model
 - Account
 - Card
 - Payment (abstract)

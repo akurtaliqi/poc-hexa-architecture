@@ -1,8 +1,9 @@
-package domain.model;
+package com.aku.domain.model;
 
 import lombok.Getter;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Getter
 public class Payment {
@@ -10,8 +11,9 @@ public class Payment {
     private final long accountId;
     private final BigDecimal amount;
     private PaymentStatus paymentStatus;
+    private final LocalDateTime paymentDate;
 
-    public Payment(long id, long accountId, BigDecimal amount) {
+    public Payment(long id, long accountId, BigDecimal amount, LocalDateTime paymentDate) {
         if (amount == null || amount.compareTo(BigDecimal.ZERO) <= 0) {
             throw new IllegalArgumentException("Invalid amount");
         }
@@ -19,6 +21,7 @@ public class Payment {
         this.accountId = accountId;
         this.amount = amount;
         this.paymentStatus = PaymentStatus.PENDING;
+        this.paymentDate = paymentDate;
     }
 
     public void accept() {

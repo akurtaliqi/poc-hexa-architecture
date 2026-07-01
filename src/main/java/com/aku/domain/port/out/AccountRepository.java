@@ -1,6 +1,6 @@
-package domain.port.out;
+package com.aku.domain.port.out;
 
-import domain.model.Account;
+import com.aku.domain.model.Account;
 
 public interface AccountRepository {
     Account findById(long accountId);
